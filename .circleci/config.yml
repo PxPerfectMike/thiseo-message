@@ -12,11 +12,10 @@ orbs:
 workflows:
   main-workflow:
     jobs:
+      - node/test
       - heroku/deploy-via-git:
-      - node/test:
-          # This is the node version to use for the `cimg/node` tag
-          # Relevant tags can be found on the CircleCI Developer Hub
-          # https://circleci.com/developer/images/image/cimg/node
+          requires:
+            - node/test
           version: '16.10'
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
