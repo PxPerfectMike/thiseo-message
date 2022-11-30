@@ -12,7 +12,6 @@ orbs:
 workflows:
   heroku_deploy:
     jobs:
-      - node/test
       - heroku/deploy-via-git:
           filters:
             branches:
