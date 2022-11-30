@@ -14,8 +14,6 @@ workflows:
     jobs:
       - node/test
       - heroku/deploy-via-git:
-          requires:
-            pkg-manager: npm
           filters:
             branches:
               only:
