@@ -10,12 +10,13 @@ orbs:
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  main-workflow:
+  heroku_deploy:
     jobs:
       - node/test
       - heroku/deploy-via-git:
           requires:
             - node/test
-          version: '16.10'
-          # If you are using yarn, change the line below from "npm" to "yarn"
-          pkg-manager: npm
+          filters:
+            branches:
+              only:
+                - main
