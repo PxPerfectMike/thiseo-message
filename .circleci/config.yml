@@ -12,7 +12,7 @@ orbs:
 workflows:
   main-workflow:
     jobs:
-      - heroku/deploy-via-git
+      - heroku/deploy-via-git:
       - node/test:
           # This is the node version to use for the `cimg/node` tag
           # Relevant tags can be found on the CircleCI Developer Hub
