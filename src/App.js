@@ -7,8 +7,8 @@ function App() {
 			<header className='App-header'>
 				<img src={logo} className='App-logo' alt='logo' />
 				<p>
-					Deployed with Heroku CLI-edit. Edit <code>src/App.js</code> and save
-					to reload.
+					Deployed with CircleCi. Edit <code>src/App.js</code> and save to
+					reload.
 				</p>
 				<a
 					className='App-link'
