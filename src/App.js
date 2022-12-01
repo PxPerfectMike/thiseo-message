@@ -7,7 +7,7 @@ function App() {
 			<header className='App-header'>
 				<img src={logo} className='App-logo' alt='logo' />
 				<p>
-					Deployed with CircleCi. Edit <code>src/App.js</code> and save to
+					Deployed with CircleCi b'y. Edit <code>src/App.js</code> and save to
 					reload.
 				</p>
 				<a
