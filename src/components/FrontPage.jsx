@@ -1,6 +1,7 @@
 import React from 'react';
-
-function FrontPage() {
+function FrontPage({ callback }) {
+	const data1 = 1;
+	const data2 = 2;
 	return (
 		<>
 			<div className='frontpageContainer'>
@@ -10,8 +11,22 @@ function FrontPage() {
 					}
 				</div>
 				<div className='buttonGroup'>
-					<button className='wideButton'>{'Create'}</button>
-					<button className='wideButton'>{'Retrieve'}</button>
+					<button
+						onClick={() => {
+							callback(data1);
+						}}
+						className='wideButton'
+					>
+						{'Create'}
+					</button>
+					<button
+						onClick={() => {
+							callback(data2);
+						}}
+						className='wideButton'
+					>
+						{'Retrieve'}
+					</button>
 				</div>
 			</div>
 		</>

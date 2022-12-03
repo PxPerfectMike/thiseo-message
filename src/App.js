@@ -1,14 +1,21 @@
 import './App.css';
 import FrontPage from './components/FrontPage';
 import TitleBar from './components/TitleBar';
+import React, { useState } from 'react';
+import CreatePage from './components/CreatePage';
 
 function App() {
-	const pageControl = 0;
+	const [page, setPage] = useState(0);
+	const callThisFromChildComponent = (value) => {
+		setPage(value);
+		console.log('the value is ' + value, 'the page is ' + page);
+	};
 
 	return (
 		<div className='App'>
 			<TitleBar />
-			{pageControl === 0 && <FrontPage />}
+			{page === 0 && <FrontPage callback={callThisFromChildComponent} />}
+			{page === 1 && <CreatePage callback={callThisFromChildComponent} />}
 		</div>
 	);
 }
