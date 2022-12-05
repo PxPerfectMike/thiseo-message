@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import CreatePage from './components/CreatePage';
 
 function App() {
-	const [page, setPage] = useState(0);
+	const [page, setPage] = useState(1);
 	const callThisFromChildComponent = (value) => {
 		setPage(value);
 		console.log('the value is ' + value, 'the page is ' + page);
