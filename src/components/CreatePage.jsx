@@ -11,7 +11,7 @@ function CreatePage({ callback }) {
 					callback(data0);
 				}}
 			>
-				reset
+				Back
 			</button>
 		</>
 	);

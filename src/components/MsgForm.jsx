@@ -23,6 +23,8 @@ export default class MsgForm extends React.Component {
 			<form onSubmit={this.handleSubmit}>
 				<textarea
 					className='mainTextInput'
+					maxLength={1500}
+					placeholder='Enter your message here'
 					type='text'
 					value={this.state.value}
 					onChange={this.handleChange}

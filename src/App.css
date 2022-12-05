@@ -18,26 +18,39 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 10vh auto 3vh auto;
+	padding: 2vw;
 	resize: none;
 	width: 80vw;
 	height: 50vh;
-	border: 3px solid #070606;
-	border-radius: 5px;
-	font-size: 3em;
+	border: 4px solid #070606;
+	border-radius: 1.2vh;
+	font-size: 2em;
 }
 
 textarea::-webkit-scrollbar {
-	width: 2px;
+	background-color: #070606;
+	border: 1px solid white;
+	border-radius: 999px;
+	width: 1.6vh;
+}
+
+textarea::-webkit-scrollbar-thumb {
+	background-color: #ffa500;
+	width: 3vw;
+	height: 3vw;
+	border-radius: 999px;
+	margin: 1px;
 }
 
 .textSubmitButton {
-	margin: 10px auto;
-	width: 20vw;
-	height: 50px;
-	border: 3px solid #070606;
-	border-radius: 5px;
+	margin: 2.5vw auto;
+	width: 27vw;
+	height: 6vh;
+	border: 0.5vh solid #070606;
+	border-radius: 1.25vw;
 	background-color: aquamarine;
 	box-shadow: 0 0.7vh #666;
+	text-align: center;
 }
 .textSubmitButton:active {
 	background-color: #198a79;
